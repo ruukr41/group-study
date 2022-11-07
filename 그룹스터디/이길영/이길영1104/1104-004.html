@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position</title>
+    <style>
+        #wrapper{
+            width: 600px;
+            height: 600px;
+            border: 2px solid black;
+            position: relative;
+            /* position: relative;을 주석처리하면 밑에 absolute는 브라우저를 기준값으로 가짐  */
+            /* absolute 는 relative를 찾아서 기준으로 맞춤. */
+            margin: 50px auto;
+        }
+        .box1{
+            /* width: 50px;
+            height: 50px;
+            background: red;
+            position:absolute; */
+            /* wrapper을 기준값으로 -relative이기때문에 몰랑ㅜ퓨푸퓨푸퓨푸퓨푸*/
+            top: 0;
+            left: 0;
+        }
+        .box2{
+            /* width: 50px;
+            height: 50px;
+            background: red;
+            position:absolute; */
+            top: 0;
+            right: 0;
+        }
+        .box3{
+            /* width: 50px;
+            height: 50px;
+            background: red;
+            position:absolute; */
+            bottom: 0;
+            right: 0;
+        }
+        .box4{
+            /* width: 50px;
+            height: 50px;
+            background: red;
+            position:absolute; */
+            bottom: 0;
+            left: 0;
+        }
+        .box5{
+            /* width: 50px;
+            height: 50px;
+            background: red;
+            position:absolute; */
+            top: 250px;
+            left: 250px;
+            /* 가운데 */
+        }
+        /* width: 50px;
+            height: 50px;
+            background: red;
+            position:absolute;  가 겹치기때문에 class002로 묶어주고 삭제 */
+        .class002{
+            width: 50px;
+            height: 50px;
+            background: red;
+            position:absolute;
+            }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+   <div class="box1 class002"></div>
+   <div class="box2 class002"></div>
+   <div class="box3 class002"></div>
+   <div class="box4 class002"></div>
+   <div class="box5 class002"></div>
+   <!-- div.box*5 -->
+   <!-- /* width: 50px;
+   height: 50px;
+   background: red;
+   position:absolute;   */ -->
+</div>
+</body>
+</html>

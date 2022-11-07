@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>오늘은 개강일 폼태그</title>
+    <!--
+    서버에게 요청하는 부분 - 검색창
+    서버와 통신이 이루어지는 부분 폼태그
+      -->
+</head>
+<body>
+    <form acrion="action.php">
+         <!-- <form acrion="action.php"> 쓰고 탭 -->
+        <h1>로그인페이지</h1>
+        아이디 : <input type="text"><br>
+         <!-- input탭하면 <input type="text">뜸. -->
+         <!-- <br> 한 칸 띄기(한줄) -->
+        패스워드 : <input type="password"><br><br>
+        <!-- password하면 글자 쓰는 거 안보임. 동그라미로 뜸. -->
+        <input type="submit" value="로그인"><input type="reset" value="초기화"><br><br>
+        <!-- value는 보이는 값 변경하는 것 원래 submit은 제출로 보이는데 로그인으로 설정하면 로그인이라고 보임 초기화도 마찬가지-->
+        <input type="color"><br>
+         <!-- 팔래트 뜸 -->
+        <input type="date"><br>
+         <!-- 날짜 -->
+        <input type="datetime"> <br>
+         <!-- 크롬이 반영 못함. 사파리에선 먹힘. 때문에 이런건 쓰면 안됨. -->
+         <!-- 자바스크립트로 해결하기. --><br>
+        <input type="datatime-local"><br>
+         <!-- 현지시간 - 내 컴은 안뜸 ((노트북도....))-->
+        <input type="week"><br>
+         <!-- 주 -->
+        <input type="file">
+        <!-- 파일 첨부하는 것 -->
+        <input type="button" value="버튼 누르기"><br>
+        <button>버튼누르기</button> <br>
+         <!-- 위에랑 같음 근데 이건 태그임 인풋이 없음 -->
+
+        <form action="action.ahp"><br>
+        <!-- 반드시 외워야함 -->
+        <input type="email" placeholder="이메일을 입력"><br>
+         <!-- input type="email" 이메일형식이어야함
+         placeholder 글씨 쓰면 사라짐
+         required 이메일이나 사이트 주소를 넣을 때 어느정도를 잡아준다. -->
+        <input type="url" placeholder="사이트 입력" required><br><br><br>
+         <!-- input type="url" 사이트 형식이어야함 -->
+
+
+    </form>
+</body>
+</html>

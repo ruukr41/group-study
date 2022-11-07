@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>즐거운 금요일</title>
+    <!-- 문서의 제목도 웹 접근성에 영향을 미침. 반드시 적어줘야 함-->
+    <style>
+        body {
+            height: 10000px;
+        }
+        /* 바디 태그의 픽셀 지정해줌 왜냐면 길이가 짧아서 */
+        .class{
+            width: 150px;
+            height: 150px;
+            border: 2px solid red;
+            /* border-radius: 75px; */
+            /* border-radius: 50%; */
+            /* border-radius는 border 모양 변형 
+               정확하게 1/2로 주면 원형으로 바뀜*/
+            border-radius: 35px 45px 40px 25px;
+            /* 방향은 좌위 우위 우아래 우왼 */
+            /* 블락이라서 width, height 먹음 */
+            /* h1 태그 선택자에서 클래스선택자로 바꿈 클래스 선택자는 .사용 */
+            /* 1. 태그 선택자
+               2. 아이디 선택자 -> 딱 한번만 적용시킬 때 아이디 선택자를 사용한다.
+               3. 클래스 선택자 -> 똑같은 부분이 여러군데일 때 사용하는 선택자를 말한다. */
+        
+        }
+        .circle{
+            width: 45px;
+            height: 45px;
+            border: 2px solid dodgerblue;
+            border-radius: 50%;
+            position:  fixed;
+            /* 스크롤을 해도 그 자리에 있음 */
+            /* position: absolute; */
+            /* 똑같은 곳에 위지하지만 고정되진 않음 따라 올라감-브라우저를 기본으로 기준값 */
+            /* relative와 absolute가 함께 쓰였을 때 부모요소나 조상요소 중에서 relative를 가지고 있고
+            그의 자식요소나 손자요소가  absolute에 포지션 속성을 가지고 있다면 해당  absolute요소에 기준값은 
+            브라우저가 아니고 relative가 기준 값이 된다 실습004 posotion*/
+            right: 50px;
+            bottom: 50px;
+            /* +가 되면 안쪽으로 치고 들어옴 -가 바깥쪽
+               누구를 기준으로 움직일까 - 브라우저 기준 */
+        }
+        i{
+            font-size: 36px;
+            color: red;
+            position:absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            /* 딩뱃 폰트 - 폰트이므로 컬러값도 줄 수 있다 */
+            /* 문제 - 가운데로 맞추기 -i태그를 감싸고 있는 것 기준 i태그는 absolute주기. */
+        }
+    </style>
+    <!-- 스타일시트에서 넘어야하는 벽~~
+          1. 포지션 부분
+          2. 디스플레이
+          3. :before, :after 가상요소 -->
+          
+</head>
+<script src="https://kit.fontawesome.com/2d369e22ae.js" crossorigin="anonymous"></script>
+<!-- https://fontawesome.com/kits/2d369e22ae/use 들어가서 Add Your Kit's Code to a Project부분 복붙 내 코드
+      구글에  fontawesome cdn-->
+<body>
+    <h1 class="class001"><a href ="#bbkjh01">반품정책</a></h1>
+    <h1 class="class001"><a href ="#bbkjh02">교환정책</a></h1>
+    <h1 class="class001"><a href ="#bbkjh03">환불정책</a></h1>
+    <h1 class="class001"><a href ="#bbkjh04">회원탈퇴</a></h1>
+    <!-- #은  id를 뜻함 #으로 표현 -->
+    <!-- h1 뒤에 class="class001" 붙여줌 -->
+    <!-- h1안에 a 들어감 블락 안에 인라인 -->
+
+    <p id="bbkjh01">반품정책 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis quam aliquid dolore aliquam sint officia voluptas fugiat, illum vel illo deleniti vero facilis laudantium eius adipisci laboriosam alias necessitatibus nisi. Lorem ipsum dolor sit amet, consectetur adipisicing elit.  Hic tempora minus consequuntur, quasi ratione nihil quod dolor vel deserunt dolores magni accusamus cum voluptate velit  assumenda atque dolorem officiis? Excepturi?</p>
+    <p id="bbkjh02">교환정책>Lorem ipsum dolor, sit amet consectetur adipisicing elit.  Debitis quam aliquid dolore aliquam sint officia voluptas fugiat, illum vel illo deleniti vero facilis laudantium eius adipisci laboriosam alias necessitatibus nisi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic tempora minus consequuntur, quasi ratione nihil quod dolor vel deserunt dolores magni accusamus cum voluptate velit assumenda atque dolorem officiis? Excepturi?</p>
+    <p id="bbkjh03">환불정책>Lorem ipsum dolor, sit amet consectetur adipisicing elit.  Debitis quam aliquid dolore aliquam sint officia voluptas fugiat, illum vel illo deleniti vero facilis  laudantium eius adipisci laboriosam alias necessitatibus nisi. Lorem ipsum dolor sit amet, consectetur adipisicing elit.  Hic tempora minus consequuntur, quasi ratione nihil quod dolor vel deserunt dolores magni accusamus cum voluptate velit  assumenda atque dolorem officiis? Excepturi?</p>
+    <p id="bbkjh04">회원탈퇴>Lorem ipsum dolor, sit amet consectetur adipisicing elit.  Debitis quam aliquid dolore aliquam sint officia voluptas fugiat, illum vel illo deleniti vero facilis  laudantium eius adipisci laboriosam alias necessitatibus nisi. Lorem ipsum dolor sit amet, consectetur adipisicing elit.  Hic tempora minus consequuntur, quasi ratione nihil quod dolor vel deserunt dolores magni accusamus cum voluptate velit assumenda atque dolorem officiis? Excepturi?</p>
+        <!-- id값은 준 다음 #으로 id를 표현한다. 그러면 반품정책 누르면 밑에 연결된 부분으로 이동해서 보여줌 -->
+        <!-- View Word Wrap -->
+    <div class="circle"><i class="fa-brands fa-apple"></i></div>
+        <!-- <div class="circle"></div> 사이에 fontawesome.com 사이트 아이콘 들어가서 apple검색하고 나오는 코드 클릭하면 검색 되는데 눌러서 코드 복붙.
+            검색했을 때 흐릿하게 보여지는 것은 유료임
+            여기 아이디- 네이버이메일 비번-01! -->
+
+
+    
+</body>
+</html>

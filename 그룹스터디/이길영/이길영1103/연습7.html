@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="action.php">
+        <input type="tel"><br>
+        <!-- tel 키패드 모바일에서만 뜸. https://filezilla-project.org/ 파일질라 설치 -->
+        <!-- 파일질라에서 로그인 후 오른쪽 아래에 HTML폴더에 파일 2개가 있음. 
+             안쪽으로 들어가서 setupfinish.html 파일 지우기
+             왼 아래 1103-007(tel있는 부분)을 오른쪽으로 드래그
+             이름을index.html로 바꾸기. 그리고 해당 도메인으로 들어가보기.
+             모바일로 들어가서 클릭하면 키패드 나옴-->
+        <input type="number" step="10"><br>
+        <!-- 숫자 올라가고 내려가고.  step은 10씩 올라가게 -->
+        <input type="range"><br>
+        <!-- 휴대폰 밝기 조절처럼 변함 - 익스플로어 는 수치나옴. 근데  공간 많이 차지. 그래서 별로라는 것. -->
+        <input type="hidden"><br><br>
+        <!-- 보이지 않음 - 개발자들만 보이게 해서 보내는 것. -->
+        <input type="submit"><br><br>
+        <h3>당신의 학과는?</h3>
+        <select name="" id="" size="5" autofocus >
+            <!-- select 탭하면 <select name="" id=""></select> 뜸 -->
+            <!-- 누르면 옵션 밑에 주르륵 보이게 하는 것 , size="5" 공간을5칸 다 보이게-->
+            <!-- autofocus는 거기에 초점 맞춰짐 -->
+            <option value="">건축공학과</option>
+            <option value="">도시공학과</option>
+            <option value="">자동차공학과</option>
+            <option value="">컴퓨터공학과</option>
+            <option value="">토목공학과</option>
+        </select>
+        <textarea name="" id="" cols="30" rows="10" readonly>
+            <!-- readonly 오직 읽는 것만 되는 것 - Lorem 치고 탭 -->
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque assumenda, 
+            quas eligendi non qui nostrum fugiat dolore debitis eum sequi laborum. 
+            Qui explicabo saepe asperiores beatae culpa, rem alias nisi.
+        </textarea>
+    
+</body>
+</html>

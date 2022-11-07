@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <!-- CSS
+        꾸며주는 역할
+        작성규칙
+        1. 소문자로 작성하는 것이 기본적인 원칙이다.
+        2. 속성: 속성값; ->  font-size: 60px;
+        3. 줄맞춤 잘 해주어야한다 -->
+    <style>
+        /* <style>은 헤드쪽 */
+        p{
+            font-size: 18px;
+            /* 사이즈는 font-size */
+            /* px단위 써주기 */
+            /* color: red; */
+            color: #ff0000;
+            /* 칼라는 그냥 color */
+            /* # ff ff ff -> 16진수
+               0 1 2 3 4 5 6 7 8 9 a b c d e f ->16개
+               f가 큰 수
+               # ff 00 00 red
+               # 00 ff 00 green
+               # 00 00 ff blue
+               # ff ff ff white
+               # 00 00 00 black */
+            font-family: Arial, Helvetica, sans-serif;
+            /* font-family: Arial, Helvetica, sans-serif;
+               어떠한 사용자가 맑은 고딕을 지운 경우 대체 폰트인 돋움...등 예비 차원에서
+               */
+            
+            text-decoration: line-through;
+            /* text-decoration: overline; 위에 라인 생김.
+                underline; 아래
+                line-through ->중간 관통*/
+            background: yellow;
+            /* background: ; 만 쓰는 것이 더 에러 안남 이미지  칼라 말고
+            background 블락 */
+            font-weight: 800;
+            /* font-weight: ; 폰트 굵기 일반 굵기를 400으로 표시 볼드체는 600. - bold안씀 */
+        }
+        /* 제어판 글꼴 - woff(web openn font tormat)
+                       - eot(embded open type)
+                       - 웹폰트용 폰드 포멧
+                       - 조심하기  */
+    </style>
+</head>
+<body>
+    <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil qui eos, 
+        fugit modi tenetur ducimus facilis error iste, tempora quos eveniet maiores quibusdam 
+        deleniti dolor minus at, explicabo dolorem. Autem?
+    </p>
+</body>
+</html>

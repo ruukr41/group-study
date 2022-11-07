@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>미디어쿼리 반응형 웹</title>
+    <style>
+        #wrapper{
+            width: 400px;
+            height: 300px;
+            background: yellow;
+            margin: 0 auto;
+            border: 1px solid black;
+            /* 줄어들때 반응오게 만드려고 max*/
+            /* 반대는 min-width 늘어날때
+            위에 기본부터 순서대로 크기를 크게 지정해주어야 함.
+            max는 점점 작게 지정.*/
+        }
+
+        @media(min-width:600px){
+            #wrapper{
+            background:red;
+            width: 90%;
+        }
+        }
+        
+        @media(min-width:800px){
+            #wrapper{
+            background: blueviolet;
+            width: 100%;
+        }
+        }
+        /* 찾아보기. 반응형웹페이지 만들기. */
+
+
+    </style>
+
+</head>
+<body>
+    <div id="wrapper">
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가상요소</title>
+    <style>
+        body{
+            margin: 20px;
+            padding: 20px;
+            /* 그냥 의미 없이 떨어뜨리려고 */
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            background: black;
+            
+        }
+        .nav{
+            /* 직사각형 박스 */
+            width: 700px;
+            position: relative;
+            margin: 50px 0;
+            overflow: hidden;
+            text-align: center;
+            border: 1px solid red;
+
+        }
+        .nav a{
+            /* 직사각형 박스 안에 5개로 나눠 준 작은 박스 */
+            display: block;
+            position: relative;
+            /*  relative 두개 */
+            float: left;
+            /* 블록이라서 내려가는데 쪼르르 스게 하려고 */
+            width: 20%;
+            /* 왜 20 - a 5개라서 */
+            padding: 16px 0 38px;
+            text-decoration: none;
+            color: white;
+            transition: 0.6s;
+            background: skyblue;
+            
+            
+        }
+        .nav a:hover{
+            /* a에 커서 올리면 */
+            color: blue;
+        }
+        .nav .effect{
+            /* 공 위치 */
+            position: absolute;
+            left: -15%;
+            /* 처음 공 위치 - 줘서 처음에 밖으로 빼줌 */
+            transition: 0.6s;
+            bottom: 15px;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: green;
+            margin-left: -6px;
+            
+            /* nav 기준 */
+        }
+        .nav:after{
+            /* 수평선 */
+            content: "";
+            /* 안넣으면 안먹음 */
+            display: block;
+            position: absolute;
+            bottom: 20px;
+            width: 100%;
+            height: 1px;
+            background: gray;
+        }
+        .nav a:after{
+            /* 수평선 위의 점 */
+            content: "";
+            display: block;
+            position: absolute;
+            left: 50%;
+            bottom: 18px;
+            width: 4px;
+            height: 4px;
+            border-radius: 50%;
+            background: pink;
+            margin-left: -2px;
+        }
+        .nav a:nth-child(1):hover ~ .effect{
+            /* nth-child(1) 숫자 매겨주는 */
+            left: 10%;
+        }
+        .nav a:nth-child(2):hover ~ .effect{
+            left: 30%;
+        }
+        .nav a:nth-child(3):hover ~ .effect{
+            left: 50%;
+        }
+        .nav a:nth-child(4):hover ~ .effect{
+            left: 70%;
+        }
+        .nav a:nth-child(5):hover ~ .effect{
+            left: 90%;
+        }
+        
+
+
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <a href="#">html</a>
+        <a href="#">css</a>
+        <a href="#">js</a>
+        <a href="#">jq</a>
+        <a href="#">re</a>
+        <div class="effect"></div>
+    </div>
+</body>
+</html>

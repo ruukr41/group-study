@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout</title>
+    <style>
+        #wrapper{
+            width: 1000px;
+            /* height: 100vh; */
+            /*  */
+            overflow: hidden;
+            /* 넘치는 영역을 숨기겠다 라는 건데
+            같이 늘어나는 기능도 함.
+            2가지 기능 */
+            margin: 0 auto;
+            border: 1px solid #333;
+        }
+        header{
+            width: 100%;
+            height: 150px;
+            background: orange;
+        }
+        #logo img{
+            width: 120px;
+            height: 60px;
+            float: left;
+            border: 1px solid black;
+            margin-top: 50px;
+            /* 어느쪽에 배치 할거냐 왼쪽; */
+            margin-left: 50px;
+        }
+        img{
+            width: 120px;
+            height: 60px;
+        }
+        
+        nav{
+            
+            width: 350px;
+            height: 40px;
+            float: right;
+            /* float은 센터 없음 그래서 잘 안 씀  */ 
+            /* border: 1px solid black; */
+            margin-top: 80px;
+        }
+        ul{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            /* 이 세개 무조건 */
+        }
+        ul li{
+            display: inline-block;
+            margin-right: 15px;
+            background: red;
+            color: #fff;
+            padding: 3px;
+        }
+        #left{
+            float: left;
+            border: 1px solid black;
+            width: 70%;
+            height: 400px;
+        }
+        #right{
+            float: right;
+            border: 1px solid black;
+            width: 25%;
+            height: 300px;
+        }
+        article{
+            width: 150px;
+            height: 110px;
+            background: red;
+            float: left;
+            margin: 10px;
+        }
+        footer{
+            clear: both;
+            /* 왜 쓰냐면 안쓰면 위쪽으로 기어 올라감.
+            float을 쓸 때는 마지막에 해제해야한다. 
+            이걸 끊는 것이 clear: both;
+            왼쪽 오른쪽 신경쓸 시간 없어서 그냥 따지지 않고 둘 다 해제한다.
+            */
+            height: 105px;
+            background: yellowgreen;
+            text-align: center;
+            padding-top: 40px;
+            box-sizing: border-box;
+            /* width 안에 보더와 패딩이 들어감
+            안주면 패딩값만큼 밑으로 떨어짐. 
+            margine은 안들어감. */
+
+        }
+        address{
+            /* 기본으로 이태리체로 나오므로
+            */
+            font-style: normal;
+            /* 이렇게 해줌 */
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <div id="logo">
+                <img src="ssu.jpg" alt="슈화">
+            </div>
+                <nav>
+                    <ul>
+                        <li>html</li>
+                        <li>css</li>
+                        <li>javascript</li>
+                        <li>todolist</li>
+                    </ul>
+                </nav>
+            
+        </header>
+        <section>
+            <div id="left">
+                <article></article>
+                <article></article>
+                <article></article>
+                <article></article>
+                <article></article>
+                <article></article>
+                <article></article>
+                <article></article>
+                <article></article>
+                <article></article>
+                <article></article>
+                <article></article>
+
+            </div>
+            <div id="right">
+                <aside>
+
+                </aside>
+
+            </div>
+            <!-- 좌 우 div로 한 묶음씩 나눠 줌  -->
+        </section>
+        <footer>
+            <address>오늘은 안 즐거운 월요일</address>
+        </footer>
+
+    </div>
+</body>
+</html>
+<!-- 시멘틱 태그
+의미가통하는, 의미가 부여되는 이라는 뜻 
+모두 블록개념의 태그이다.
+1)header=>윗부분. 즉 메뉴가 포함되어져서 슬라이드까지 포함되는 부분 
+2)section=>몸통-저작권에 의해 보호되는 부분(상세 상품 보기)
+3)article=>몸통의 또 다른 부분-저작권이 풀린 부분
+4)footer=>아래쪽 
+5)aside=>오른쪽, 왼쪽으로 빠져있는 부분
+6)address-주소(footer에 들어가 있음)-주소 외에는 아무것도 넣지 않는 게 웹 표준
+7.nav-메뉴부분
+등등
+-->

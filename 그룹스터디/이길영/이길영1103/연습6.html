@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>폼의 요소</title>
+</head>
+<body>
+    <form action="action.ahp"><br>
+        <!-- 반드시 외워야함 -->
+        <input type="email" placeholder="이메일을 입력"><br>
+         <!-- input type="email" 이메일형식이어야함
+         placeholder 글씨 쓰면 사라짐
+         required 이메일이나 사이트 주소를 넣을 때 어느정도를 잡아준다. -->
+        <input type="url" placeholder="사이트 입력" required><br><br><br>
+         <!-- input type="url" 사이트 형식이어야함 -->
+        <input type="submit"><br><br>
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+         <!-- textarea 탭하면 <textarea name="" id="" cols="30" rows="10"></textarea> 뜸 -->
+         <!-- cols="30" 30글자, rows="10" 10줄 쓸 수 있는 공간 생김.-->
+         <!-- </textarea>를 다음줄에 쓰면 오류가 일어남. - 시작부분이 달라짐. - 건들 ㄴㄴ -->
+
+        <h1>당신의 성별은?</h1>
+        <input type="radio" name="male">여성 <input type="radio" name="male">남성<br><br>
+         <!-- name="male" 부분이 같아야 둘 중 하나 선택 -->
+         <!-- 둘이 다르면 둘 다 선택 가능하게 됨. -->
+        <input type="submit"><br><br>
+
+        <h2>당신의 취미를 2가지 이상 선택해 주세요</h2>
+        <input type="checkbox" name="fishing">낚시 
+        <input type="checkbox" name="racing">레이싱 
+        <input type="checkbox" name="tv">TV보기
+        <input type="checkbox" name="mung">멍때리기
+        <input type="checkbox" name="movie">영화보기<br><br>
+         <!-- <input type="checkbox" -선택하는 것 -->
+
+        <input type="password" autocomplete="false"><br><br>
+         <!-- autocomplete="true" true 로 되어있으므로
+         <input type="password" autocomplete="false">로 하기
+         true 는 아이디치면 밑에 비번이 자동으로 뜨게 됨. -->
+</body>
+</html>

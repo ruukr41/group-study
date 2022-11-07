@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>오디오, 비디오</title>
+</head>
+<body>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/QJHC5Jai_S8" title="YouTube video player" 
+    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen></iframe><br><br>
+    <!--  유튜브를 삽입하고 싶다. 유튜브 공유하기에서 퍼가기 누르기. 복붙하기. 그럼 동영상 뜸. -->
+    <!-- 여기서 frameborder 끼워넣기(테두리) -->
+    <!-- 사이트에서 우클릭 하면 페이지 소스보기 있음. 누르면 소스가 뜨는데 주석 처리된 부분이 있음 -->
+    <audio src="iu.mp3"controls loop autoplay muted></audio>
+    <!--오디오를 넣고 싶으면 audio태그. src 파일이름 넣기 -->
+    <!-- controls 조절기 뜸. loop 무한반복. autoplay 자동재생. muted 음소거 -->
+    <!-- muted를 안넣어주면 autoplay가 안먹음 -->
+    <audio src="iu.mp4"controls loop autoplay muted></audio>
+    <!-- 비디오도 마찬가지 -->
+    <hr>오늘은 개강일 
+    <!-- hr은 안닫아도 되는 태그 - 수평선 한줄 다 잡아먹어서 옆에 글 써도 밑으로 떨어짐-블락 -->
+    <!-- 블락 개념의 태그 : 한 줄 다 먹고 들어가는 태그 -->
+    <!-- 인라인 개념의 태그 : 한 줄에 같은 태그가 여러개 사용될 수 있는 태그 -->
+    <!-- table, ul도 블락 개념 -->
+    <a href="#">링크1</a><a href="#">링크2</a>
+    <!-- a태그 2개 href에 #넣기. -->
+    <!-- a태그 - 링크 거는 것 -->
+    <table border="1" width="300"  height="300">
+        <!-- table태그 -->
+         <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+             <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>오늘은 개강일
+    <ul>
+        <li><a href="http://www.apple.com">월요일</a></li>
+        <!-- 월요일 하이퍼링크 연결됨. -->
+        <!-- <a href="http://www.apple.com"></a><li>월요일</a></li> 이것도 먹는데 틀린 코드임. 웹표준과 어긋남 -->
+        <li>화요일</li>
+        <li>수요일</li>
+    </ul>
+    
+</body>
+</html>
+<!-- 
+1. 블락과 인라인의 관계
+1)블락은 인라인을 감쌀 수 있다.
+2)블락은 블락을 감쌀 수 있다.
+3)인라인은 인라인을 감쌀 수 있다.
+4)인라인은 절대 블락을 감쌀 수 없다.!!!!!
+ -->

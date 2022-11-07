@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>그레디언트</title>
+    <style>
+        #box{
+            width: 400px;
+            height: 300px;
+            border: 1px solid black;
+            margin: 50px auto;
+            /* background: repeating-linear-gradient(to top, red 0px , red 20px, yellow 20px, yellow 40px); */
+            /* 밑에 뜨는 이유는 최신이라서 모든 브라우저가 */
+            /* to top : 위로 빨에서 노로 가겠다. */
+            /* 45deg 각도로 */
+            /* 20px씩 20개로 나옴 */
+            /* to top, red 0px , red 20px, yellow 20px, yellow 40px 21주면 흐릿해짐. 겹치게 주어야함, */
+            /* background: repeating-radial-gradient( circle, red 0px , red 20px, yellow 20px, yellow 40px); */
+            /* 어지럽게 변함 */
+            background: repeating-radial-gradient( ellipse, red 0px , red 20px, yellow 20px, yellow 40px);
+            /* circle은 정원으로 ellips은 타원 */
+
+        }
+
+    </style>
+</head>
+<body>
+    <div id="box">
+
+    </div>
+    <!-- div#box 탭 -->
+</body>
+</html>

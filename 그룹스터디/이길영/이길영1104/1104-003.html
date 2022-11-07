@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>a</title>
+    <style>
+        #wrapper{
+            width: 800px;
+            height: 100vh;
+            border: 2px solid black;
+            margin: 0 auto;
+            /* 브라우저 접두사,벤터 프리픽스, 프리픽스
+              (안써주면 잘 안먹음)
+              - webkit - 방식의 브라우저-크롬 사파리
+              - o - 오페라
+              - moz - 파이어폭스 */
+            -webkit-border-radius: 50px;
+            -moz-border-radius: 50px;
+            -o-border-radius: 50px;
+            /* 모던브라우저에서 밑에가 안 먹는 경우  */
+            border-radius: 50px;
+            /* 형태에 따라
+               1. 최신모던브라우저 - 크롬
+               2. 모던브라우저 - 더이상 업데이트 하지 못하는 브라우저
+               3. 구형브라우저(익스플로러) */
+
+
+            /* 0 auto는 0 auto 0 auto 의 약자-가운데 정렬 */
+            /* 0는 0  000의 약자 */
+            /* 0 10px 0은 0 10px 0 10px - margin 주는 기법 */
+
+        }
+        a{
+            color: black;
+            text-decoration: none;
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+        p{  
+            /* width: 600px;
+            height: 600px;
+            border: 2px solid black;
+            margin: 0 auto; */
+
+            width: 100px;
+            height: 80px;
+            padding: 20px;
+            border: 8px ;
+            margin: 0 auto;
+            background: #ccc;
+            box-sizing: border-box;
+            /* width가 100으로 고정 
+            Width 값에 height,padding,border값이 담김..(?)  */
+
+        }
+        /* 가상요소 */
+        p::before{
+            /* content: "앞부분에 삽입"; */
+            content: "";
+            display: block;
+            background: orange;
+            /* content 공란으로 두고 */
+            width: 100px;
+            height: 30px;
+            border: 2px solid black;
+            /* 처음에 content를 빼먹는 실수를 많이 함. 꼭 써주기. */
+        }
+        p::after{
+            content: "";
+            display: block;
+            background: red;
+            color: white;
+            /* content 공란으로 두고 */
+            width: 100px;
+            height: 30px;
+            border: 2px solid black;
+        }
+        ul li:nth-child(odd){
+            color: red;
+            /* odd 는 홀수(아드라고 발음) (2n+1도 홀수-n이 0부터 시작)
+               even 은 홀수(이븐) (2n과 같음) */
+
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <a href="#">링크1</a>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error eius culpa, ipsa quo voluptas sequi nisi quas consequatur eveniet expedita nam non distinctio veniam quae earum doloribus omnis hic aperiam.</p>
+
+
+    </div>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+        <li>9</li>
+        <li>10</li>
+        <li>11</li>
+        <li>12</li>
+    </ul>
+</body>
+</html>

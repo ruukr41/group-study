@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2DEPE</title>
+    <!--  -->
+    <style>
+        .cls001{
+            list-style: none;
+            /* 첫번째 동그라미 없앰 */
+            margin: 0;
+            padding: 0;
+            /* ul은 공간을 타고 태어나서 */
+        }
+        .cls001> li{
+            /* >자식요소 */
+            width: 120px;
+            height: 30px;
+            line-height: 30px;
+            /* height: 30px;
+            line-height: 30px;  똑같이 주면 침범 못하게 (원래 조부모값을 침범함) */
+            border: 1px solid black;
+            text-align: center;
+            /* 텍스트 위치값 */
+            float: left;
+            /* 내가
+             위치값은 어디에다 붙일 것이냐 . li블락 인데 float을 이용해서 왼쪽으로 붙여라 */
+        
+        }
+        .cls001 li ul{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+
+             }
+        .cls001 li ul li {
+            width: 120px;
+            height: 30px;
+            line-height: 30px;
+            border: 1px solid black;
+            text-align: center;
+            display: none; 
+             }
+        .cls001 li:hover ul li{
+            display: block;
+
+        }
+
+    </style>
+</head>
+<body>
+    <ul class="cls001">
+        <li>HTML
+            <!-- li블락 -->
+            <ul>
+                <li>HTML1</li>
+                <li>HTML2</li>
+                <li>HTML3</li>
+            </ul>
+        </li>
+        <li>CSS</li>
+        <li>JS</li>
+        <li>SQ</li>
+        <li>Pf</li>
+    </ul>
+
+</body>
+</html>

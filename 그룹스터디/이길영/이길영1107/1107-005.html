@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>선택자</title>
+    <style>
+        .cls001~li {
+            /* 형제니까 2345678 */
+            color: red;
+        }
+        ul li{
+            /* 하위 선택자 
+            자식선택자보다 더 넓은 범위 선택.
+            손자도 가능*/
+            color: red;
+        }
+        ul > li{
+            /* 자식선택자
+            바로 자식만 선택될 수 있음
+            손자 불가. */
+            color: red;
+        }
+        .cls001 +li{
+            /* 인접선택자 : 바로 다음요소만 */
+            color: red;
+        }
+        
+    
+    </style>
+</head>
+<body>
+    <ul>
+        <li class="cls001">1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+    </ul>
+</body>
+</html>
+<!-- CSS의 한계 : 1번이 2번 잡을 수 있다. 그러나 2번에다 class를 주면 1번은 못잡음. -->

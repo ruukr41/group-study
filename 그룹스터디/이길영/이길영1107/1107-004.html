@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>풀비디오t</title>
+    <!-- 비디오를 전체에 깔고 그 위에 텍스트 -->
+    <style>
+        video{
+            position: fixed;
+            top: 0;
+            left: 0;
+            min-width: 100%;
+            min-height: 100%;
+            /* 전체에 */
+        }
+ 
+        p{
+            margin: 0;
+            padding: 0;
+            width: 150px;
+            height: 50px;
+            line-height: 50px;
+            color: aliceblue;
+            position: absolute;
+            /* opacity: 1; */
+            /* 배경 투명*/
+            text-align: center;
+            background: red;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            /* p태그도 margin: 0; padding: 0; 줘야함. -정확한 위치 맞추려면*/
+
+        }
+    </style>
+</head>
+<body>
+    <video src="Beach.mp4" autoplay muted loop></video>
+    <!-- 이미지의 경우 bg커버 사이즈로 채웠었음. -->
+    
+    <p>ENTER</p>
+    <!-- 어떠한 영역을 만들어서 정가운데에 이 엔터도 정 가운데에 -->
+    
+</body>
+</html>

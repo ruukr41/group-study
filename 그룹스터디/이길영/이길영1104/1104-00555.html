@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>그레디언트2</title>
+    <style>
+        #box{
+            position: absolute;
+            /* absolute 단독으로쓰면 브라우저기준 */
+            top: 50px;
+            left: 50px;
+            right: 50px;
+            bottom: 50px;
+            width: 50px;
+            height: 50px;
+            background: red;
+            animation-name: gy;
+            /* 개발자가 네임지정 */
+            animation-duration: 2s;
+            /* animation-iteration-count: infinite; */
+            /* 무한 */
+            animation-iteration-count: 10;
+            /* 10번 */
+            /* animation-direction: normal; */
+            animation-direction: alternate;
+            /* 왔다갔다 */
+            /* animation-timing-function:linear; */
+            /* 똑같은 속도 */
+            animation-direction: cubic-bezier(.9,-0.37,.11,1.43);
+            /* 속도 바꿈 
+               https://cubic-bezier.com/#.17,.67,.51,.3
+               가서 속도곡선 만들고 복붙 cubic-bezier(.9,-0.37,.11,1.43)*/
+
+            /* 너무 많다. 한번에 적어줌. 외워야 한번에 적을 수 있다. */
+
+
+            /* margin: 50px auto;
+            transition: 2s; */
+            /* 2초 동안 150px움직여라 */
+
+        }
+
+        @keyframes gy{
+            /* @keyframes 애니매이션 네임 */
+
+            /* 0%{ */
+            from{
+            /* 0과 같음 */
+                position: absolute; 
+                top: 50px;
+                left: 50px;
+
+            }
+            25%{
+                position: absolute; 
+                top: 50px;
+                left: 500px;
+
+            }
+            50%{
+                position: absolute;
+                top: 500px;
+                left: 500px;
+
+            }
+            75%{
+                position: absolute;
+                top: 500px;
+                left: 50px;
+
+            }
+            /* 100%{ */
+            to{
+            /* 100과 같음 */
+                position: absolute;
+                top: 50px;
+                left: 50px;
+
+            }
+        }
+        /* #box:hover{ */
+            /* transform: translateX(150px); */
+            /* x축으로 이동 */
+            /* transform: translateY(150px); */
+            /* 아래로 */
+            /* transform: rotate(720deg); */
+            /* 두바퀴 돔 */
+            /* transform: skewX(60deg); */
+            /*  */
+            /* transform: skewY(60deg); */
+            /*  */
+            /* transform: scale(2.0); */
+            /* 2배 증가 */
+
+        /* } */
+
+    </style>
+</head>
+<body>
+    <div id="box">
+
+    </div>
+    <!-- div#box 탭 -->
+</body>
+</html>

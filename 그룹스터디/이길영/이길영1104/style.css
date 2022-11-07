@@ -1,0 +1,42 @@
+<style>
+        p{
+            font-size: 36px;
+            /* color: red; */
+            color: #ff0000;
+            font-family: Arial, Helvetica, sans-serif;
+            
+            /* text-decoration: line-through; */
+            background: yellow;
+            font-weight: 800;
+            /* border-width: 10px;
+            border-style: solid;
+            border-color: black; */
+            /* 실무에서는 길게 쓰는 거 싫어해서 */
+            /* border: 10px solid black; */
+            /* 이렇게 */
+            /* border: 10px dashed black; */
+            /* border: 20px dotted black; */
+            /* 밑부턴 안 외워도 됨 */
+            /* border: 20px inset gray; */
+            border: 20px solid gray;
+            /* 움푹 들어간 느낌 outset은 반대
+               ridge는 두칸느낌 groove는 반대*/
+            text-shadow: 4px 4px 5px orange;
+               /* 글자에 그림자 :  */
+            box-shadow:4px 4px 5px red;
+            /* 박스에 그림자 */
+            /* 내부 스타일 */
+            /* 스타일시트 종류
+               0. !important 어떤것도 다 깨버림 0번째로 먹어버림
+                - 많으면 소스가 먹게 하려고 다른 사람들이 엄청 건들였다는 뜻
+               1. 인라인스타일시트
+                  - 갑자기 안뜨면 외부 찾지 말고 거기서 끝냄
+               2. 내부스타일시트 -어제 사용했던
+               3. 외부스타일시트 -내부로 썼으면 1000번 써야될 걸 1번만 써도 됨 */
+               /*  */
+
+
+
+
+        }
+    </style>
