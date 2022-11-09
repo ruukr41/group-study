@@ -1,0 +1,72 @@
+*{
+    margin:0;
+    padding: 0;
+    border: 0;
+}  
+input[id="x01"]{
+    font-size: 100px;
+    display: none;
+    
+}
+input[id="x01"]+label{
+   
+    display:block; 
+    width:30px;
+    height: 20px;
+    position: fixed;
+    left: 0;
+    top:calc(50% - 50px);
+    transition: all 0.9;    
+    cursor: pointer;
+    transition: all 0.9s;
+    
+}
+input[id="x01"]:checked +label{
+    z-index: 2;
+    left: 300px;
+    transition: all 0.9s;
+}
+input[id="x01"]+label span {
+    display: inline-block;
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    border-radius: 30px;
+    background-color: rgb(231, 1, 1);
+    left: 10px ;
+    
+    
+}
+input[id="x01"]+label span:nth-child(1){
+    top:0px;
+}input[id="x01"]+label span:nth-child(2){
+    top: 50%;
+    transform: translateY(-50%);
+}input[id="x01"]+label span:nth-child(3){
+    bottom:0px;
+}
+input[id="x01"]:checked +label{
+    
+    z-index: 2;
+}
+
+
+input[id="x01"]:checked +label span:nth-child(1){
+    top:50%;
+    transform: translateY(-50%) rotate(45deg);
+    transition: all .9s;
+}input[id="x01"]:checked+label span:nth-child(2){
+     display: none;
+}input[id="x01"]:checked+label span:nth-child(3){
+    bottom:50%;
+    transform: translateY(50%) rotate(-45deg);
+    transition: all .9s;
+}
+input[id="x01"]:checked +label +.sidebar{
+    left: 0;
+    transition: all 0.9s;
+    
+}
+input[id="x01"]:checked +label span{
+    background-color: rgb(255, 255, 255);
+}
